@@ -1,7 +1,9 @@
+def lcm(a,b):
+    c=b
+    while True:
+        if c%a==0 and c%b==0:
+            return c
+        c+=1
+        
 a,b=map(int,input().split())
-i=1
-while 1:
-    if(a*i)%b==0:
-        print(a*i)
-        break
-    i+=1
+print(lcm(a,b))
