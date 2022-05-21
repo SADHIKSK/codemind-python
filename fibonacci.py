@@ -1,0 +1,11 @@
+n=int(input())
+fn=0
+sn=1
+print(fn,end=' ')
+print(sn,end=' ')
+while n!=2:
+    nn=fn+sn
+    print(nn,end=' ')
+    fn=sn
+    sn=nn
+    n-=1
